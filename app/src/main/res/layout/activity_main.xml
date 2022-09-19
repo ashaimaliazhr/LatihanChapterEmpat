@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/judul_satu"
+        android:layout_marginTop="220dp"
+        android:layout_marginLeft="150dp"
+        android:textStyle="bold"
+        android:textSize="24sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/judul_dua"
+        android:layout_marginTop="265dp"
+        android:layout_marginLeft="25dp" />
+
+    <EditText
+        android:id="@+id/tvEdit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="280dp"
+        android:layout_marginRight="25dp"
+        android:inputType="text"
+        android:hint="@string/edit" />
+
+    <Button
+        android:id="@+id/btnDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/detail"
+        android:layout_marginTop="335dp"
+        android:layout_marginLeft="290dp"/>
+
+    <androidx.fragment.app.FragmentContainerView
+        android:layout_below="@+id/btnDetail"
+        android:id="@+id/fragmentContainerView"
+        android:name="androidx.navigation.fragment.NavHostFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:defaultNavHost="true"
+        app:navGraph="@navigation/main_nav" />
+
+
+</RelativeLayout>

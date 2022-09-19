@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">LatihanChapterEmpat</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="judul_satu">Words App</string>
+    <string name="judul_dua">Find your Word from Alphabet!</string>
+    <string name="edit">Spill your Alphabet</string>
+    <string name="detail">Detail</string>
+
+</resources>
